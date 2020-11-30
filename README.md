@@ -1,2 +1,3 @@
-# Advent-of-Code-2020
-My solutions of the Advent of Code 2020 challenge
+# Advent of Code 2020
+
+<img src="advent.png" style="width: 100%;"/>
