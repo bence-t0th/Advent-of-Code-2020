@@ -1,65 +1,7 @@
-data class Policy(val string: String) {
-    private val min: Int
-    private val max: Int
-    private val letter: Char
+package inputManager
 
-    init {
-        val parts = string.split(" ")
-        val range = parts[0].split("-").map { it.toInt() }
-        this.min = range[0]
-        this.max = range[1]
-        this.letter = parts[1].toCharArray()[0]
-    }
-
-   fun validate(password: String): Boolean {
-       val res = password.split(letter.toString()).size - 1
-       return res in min..max
-   }
-
-    fun validate2(password: String): Boolean {
-        return ((letter == password[min - 1] && letter != password[max - 1]) ||
-                (letter == password[max - 1] && letter != password[min - 1]))
-    }
-}
-
-fun part1(input: List<List<String>>): Int {
-    val start = System.currentTimeMillis()
-
-    var res = 0
-    for (i in input.indices) {
-        val pol = Policy(input[i][0])
-        if (pol.validate(input[i][1]))
-            res++
-    }
-
-    val dur = (System.currentTimeMillis() - start).toDouble()
-    println("Part 1: $dur ms")
-
-    return res
-}
-
-fun part2(input: List<List<String>>): Int {
-    val start = System.currentTimeMillis()
-
-    var res = 0
-    for (i in input.indices) {
-        val pol = Policy(input[i][0])
-        if (pol.validate2(input[i][1]))
-            res++
-    }
-
-    val dur = (System.currentTimeMillis() - start).toDouble()
-    println("Part 2: $dur ms")
-
-    return res
-}
-
-fun main(args: Array<String>) {
-    println(part1(input))
-    println(part2(input))
-}
-
-val input = """
+object input2 {
+    val formattedInput = """
 1-7 j: vrfjljjwbsv
 1-10 j: jjjjjjjjjjjj
 9-13 s: jfxssvtvssvsbx
@@ -1061,3 +1003,4 @@ val input = """
 8-16 c: cpcpcqccrnckpmcw
 7-8 x: xxnszxbxgxwxx
 """.trimIndent().split("\n").map { it.split(": ") }
+}
