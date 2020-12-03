@@ -6,5 +6,6 @@
 | ------ | ------ | ------ | ------ |------ | ------ |
 | [Day 1: Report Repair](http://adventofcode.com/2020/day/1) | :star: :star: | 2 ms | 1 ms | 14 ms | 4 ms |
 | [Day 2: Password Philosophy](http://adventofcode.com/2020/day/2) | :star: :star: | 11 ms | 3 ms | 13 ms | 17 ms |
+| [Day 3: Toboggan Trajectory](http://adventofcode.com/2020/day/3) | :star: :star: |  <1 ms | 1 ms | <0.5 ms | 0.5 ms |
 
-![Last Commit on GitHub](https://img.shields.io/badge/last%20commit-2020--12--02-orange)
+![Last Commit on GitHub](https://img.shields.io/badge/last%20commit-2020--12--03-orange)
