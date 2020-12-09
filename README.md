@@ -11,5 +11,6 @@
 | [Day 5: Binary Boarding](http://adventofcode.com/2020/day/5) | :star: :star: | 7 ms | 65 ms | 7 ms | 15 ms |
 | [Day 6: Custom Customs](http://adventofcode.com/2020/day/6) | :star: :star: | 62 ms | 15 ms | 4 ms | 17 ms |
 | [Day 7: Handy Haversacks](http://adventofcode.com/2020/day/7) | :star: | 3.64 s | - ms | 26.8 s | - ms |
+| [Day 8: Handheld Halting](http://adventofcode.com/2020/day/8) | :star: :star: | 1 ms | 28 ms | 1 ms | 155 ms |
 
 ![Last Commit on GitHub](https://img.shields.io/github/last-commit/bence-t0th/Advent-of-Code-2020)
