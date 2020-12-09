@@ -1,13 +1,17 @@
 package dailySolutions
 
-import com.sun.org.apache.xpath.internal.operations.Bool
 import inputManager.input7
+
+data class BagWithAmount(val col: String, val num: Int) {
+    val color: String = col
+    val amount: Int = num
+}
 
 class Bag(input: String) {
 
     val color: String
-   // val bags: List<Pair<String, Int>>?
-    val bags: List<String>
+//    val bags: List<String>                    I used list of Strings in Part 1
+    val bags: List<BagWithAmount>
 
     init {
         val rule = input.split(" bags contain ")
@@ -19,7 +23,7 @@ class Bag(input: String) {
             val containedBags = rule[1].split(", ")
             this.bags = containedBags.map {
                 val words = it.split(" ")
-                return@map ("${words[1]} ${words[2]}")
+                return@map BagWithAmount("${words[1]} ${words[2]}", words[0].toInt())
             }
         }
     }
@@ -47,7 +51,7 @@ private fun day7part1(input: List<String>): Int {
         for (rule in rules) {
             if (rule.color == color) {
                 rule.bags.forEach {
-                    bagsWithin += it
+                    bagsWithin += it.color
                 }
             }
         }

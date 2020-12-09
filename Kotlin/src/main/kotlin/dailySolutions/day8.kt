@@ -68,7 +68,7 @@ fun day8part2(commands: List<Command>): Int {
         }
 
     val dur = (System.currentTimeMillis() - start)
-    println("Part 1: $dur ms")
+    println("Part 2: $dur ms")
 
     return res
 }

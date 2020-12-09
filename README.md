@@ -12,5 +12,6 @@
 | [Day 6: Custom Customs](http://adventofcode.com/2020/day/6) | :star: :star: | 62 ms | 15 ms | 4 ms | 17 ms |
 | [Day 7: Handy Haversacks](http://adventofcode.com/2020/day/7) | :star: | 3.64 s | - ms | 26.8 s | - ms |
 | [Day 8: Handheld Halting](http://adventofcode.com/2020/day/8) | :star: :star: | 1 ms | 28 ms | 1 ms | 155 ms |
+| [Day 9: Encoding Error](http://adventofcode.com/2020/day/9) | :star: :star: | 12 ms | 28 ms | 230 ms | 27 ms |
 
 ![Last Commit on GitHub](https://img.shields.io/github/last-commit/bence-t0th/Advent-of-Code-2020)
