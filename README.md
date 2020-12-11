@@ -13,5 +13,6 @@
 | [Day 7: Handy Haversacks](http://adventofcode.com/2020/day/7) | :star: | 3.64 s | - ms | 26.8 s | - ms |
 | [Day 8: Handheld Halting](http://adventofcode.com/2020/day/8) | :star: :star: | 1 ms | 28 ms | 1 ms | 155 ms |
 | [Day 9: Encoding Error](http://adventofcode.com/2020/day/9) | :star: :star: | 12 ms | 28 ms | 230 ms | 27 ms |
+| [Day 10: Adapter Array](http://adventofcode.com/2020/day/10) 🎂 | :star: :star: | <0.1 ms | - ms | 0.1 ms | - ms |
 
 ![Last Commit on GitHub](https://img.shields.io/github/last-commit/bence-t0th/Advent-of-Code-2020)
