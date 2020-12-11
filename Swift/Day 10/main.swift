@@ -27,13 +27,37 @@ func birthdayPart1(_ input: [Int]) -> Int {
     return sum1 * sum3
 }
 
+func tribonacci(n: Int) -> Int {
+    if n <= 1 { return 0 }
+    else if n == 2 { return 1}
+    else {
+        return tribonacci(n: n - 1) + tribonacci(n: n - 2) + tribonacci(n: n - 3)
+    }
+}
+
 func birthdayPart2(_ input: [Int]) -> Int {
     let start = CFAbsoluteTimeGetCurrent()
-        
+    
+    var jolts = [Int]()
+    jolts.append(0)
+    jolts.append(contentsOf: input)
+    
+    var differences = [Int]()
+    
+    for i in 0..<jolts.count - 1 {
+        differences.append(jolts[i + 1] - jolts[i])
+    }
+
+    let numberOf1s = differences.split(separator: 3).map { $0.count }
+
+    let res = numberOf1s.reduce(1) {
+        tribonacci(n: $1 + 2) * $0
+    }
+    
     let dur = CFAbsoluteTimeGetCurrent() - start
     print("Part 2: \(dur * 1000) ms")
     
-    return -1
+    return res
 }
 
 print(birthdayPart1(InputManager.input))
